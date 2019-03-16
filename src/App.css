@@ -2,6 +2,12 @@
   align-items: center;
   background-color: blueviolet;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
+}
+
+.App h1 {
+  color: white;
+  width: 400px;
 }

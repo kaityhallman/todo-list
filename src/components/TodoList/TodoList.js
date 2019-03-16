@@ -15,7 +15,7 @@ const getListStyle = () => ({
 
 class TodoList extends React.Component {
   render() {
-    const { todos, deleteTodo, onDragEnd } = this.props;
+    const { todos, deleteTodo, onDragEnd, completeTodo } = this.props;
     return (
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="droppable">
@@ -39,7 +39,7 @@ class TodoList extends React.Component {
                         provided.draggableProps.style
                       )}
                     >
-                      <Todo {...todo} key={todo.id} deleteTodo={deleteTodo} />
+                      <Todo {...todo} key={todo.id} deleteTodo={deleteTodo} completeTodo={completeTodo} />
                     </div>
                   )}
                 </Draggable>

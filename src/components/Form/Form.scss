@@ -1,0 +1,22 @@
+.form {
+  color: white;
+  margin-top: 40px;
+  width: 400px;
+
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  input {
+    border: 0;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 12px;
+    height: 26px;
+    margin-right: 8px;
+    padding: 0 12px;
+    vertical-align: top;
+  }
+}
