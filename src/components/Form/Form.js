@@ -8,7 +8,7 @@ const Form = ({ onSubmit, newTodo, setNewTodo }) => {
     <form className='form' onSubmit={onSubmit}>
       <label>Add todo.</label>
       <input type='text' id='add-todo' value={newTodo} onChange={setNewTodo} />
-      <Button img={AddButton} alt='Add' />
+      <Button img={AddButton} alt='Add' disabled={!newTodo} />
     </form>
   );
 };

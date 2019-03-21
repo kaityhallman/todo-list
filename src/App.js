@@ -60,12 +60,14 @@ class App extends Component {
   addTodo = (event) => {
     event.preventDefault();
     const { todos, newTodo } = this.state;
-    todos.push({
-      id: uuid(),
-      text: newTodo,
-      completed: false,
-    });
-    this.setState({ newTodo: '', todos });
+    if (newTodo !== '') {
+      todos.push({
+        id: uuid(),
+        text: newTodo,
+        completed: false,
+      });
+      this.setState({ newTodo: '', todos });
+    }
   }
 
   setNewTodo = (event) => {

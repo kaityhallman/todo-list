@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.App h1 {
+.App h1, h2 {
   color: white;
   width: 400px;
 }
